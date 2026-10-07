@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNest Solutions</title>
+<style>
+body {
+        background-color: whitesmoke;
+        color: black;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+h1 { font-size: 32px; margin: 5px; }
+h2 { font-size: 24px; color: black; }
+h3 { font-size: 18px; color: black; margin: 5px; }
+.wrapper {
+        margin: 15px;
+        padding: 10px;
+        width: 90%;
+    }
+.header {
+        background-color:slategrey;
+        color: black;
+        text-align: left;
+        padding: 20px;
+        border-bottom: 5px;
+    }
+.about {
+        background-color: white;
+        border: 1px solid black;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+.products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+.product {
+        background-color:azure;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: left;
+    }
+.price { 
+        color:black; font-weight: bold;
+     }
+table {
+        border: 2px yellowgreen;
+        background-color: white;
+        width: 100%;
+        border-collapse: collapse;
+    }
+th {
+        background-color: slategrey;
+        color: white;
+        border: 1px solid black;
+        padding: 8px;
+    }
+td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+.services {
+        display: flex;
+        align-items: center;
+        background-color: azure ;
+        padding: 10px;
+        border: 1px solid black;
+    }
+.service {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 8px;
+        width: 22%;
+        text-align: center;
+    }
+.box {
+        background-color: white;
+        border: 1px solid black ;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+.footer {
+        background-color: slategrey;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div class="header" id="top">
+    <img src="logo.jpg" alt="TechNest Solutions logo" width="250" height="150">
+    <p>Smart Technology For Everyday Life</p>
+</div>
+<div class="wrapper">
+<div class="about" id="about">
+    <h2>About TechNest Solutions</h2>
+    <p>
+        <span style="color: black; font-weight: bold;">TechNest Solutions</span>
+        is a technology store in Faisalabad. We sell laptops, smartphones, headphones,smart watches and computer accessories.
+        Our goal is to make technology simple and affordable for everyone.
+        We also help customers with repairs, network setup and data backup.
+    </p>
+    <p>Our old price for the Laptop Pro was <del>Rs. 220,000</del>, now available for Rs. 185,000.</p>
+</div>
+<h2>Products</h2>
+<div class="products">
+
+    <div class="product">
+        <img src="laptop.jpg" alt="Laptop" width="60" height="60">
+        <h3>laptops pro</h3>
+        <p>A fast laptop for work and study.</p>
+        <p class="price">Rs. 185,000</p>
+    </div>
+
+    <div class="product">
+        <img src="phone.jpg" alt="Smartphone" width="60" height="60">
+        <h3>Smart Phone XR</h3>
+        <p>A smartphone with a clear screen and a good camera.</p>
+        <p class="price">Rs. 135,000</p>
+    </div>
+
+    <div class="product">
+        <img src="headphone.jpg" alt="Headphones" width="60" height="60">
+        <h3>Wireless Headphones</h3>
+        <p>Comfortable headphones with clear sound.</p>
+        <p class="price">Rs. 15,000</p>
+    </div>
+
+    <div class="product">
+        <img src="watch.jpg" alt="Smart watch" width="60" height="60">
+        <h3>Smart Watch</h3>
+        <p>A smart watch that tracks steps and time.</p>
+        <p class="price">Rs. 25,000</p>
+    </div>
+
+    <div class="product">
+        <img src="keyboard.jpg" alt="Keyboard" width="60" height="60">
+        <h3>Wireless Keyboard</h3>
+        <p>A slim keyboard that connects without wires.</p>
+        <p class="price">Rs. 7,000</p>
+    </div>
+</div>
+<h2>Product Price List</h2>
+<table class="product_table">
+    <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Availability</th>
+    </tr>
+    <tr>
+        <td>Laptop Pro</td>
+        <td>Laptops</td>
+        <td><del>Rs. 220,000</del>Rs. 185,000</td>
+        <td><span style="color: green;">In Stock</span></td>
+    </tr>
+    <tr>
+        <td>Smart Phone XR</td>
+        <td>Smartphones</td>
+        <td>Rs. 135,000</td>
+        <td>In Stock</td>
+    </tr>
+    <tr>
+        <td>Wireless Headphones</td>
+        <td>Headphones</td>
+        <td>Rs. 15,000</td>
+        <td><span style="color: red;">Out of Stock</span></td>
+    </tr>
+    <tr>
+        <td>Smart Watch</td>
+        <td>Watches</td>
+        <td>Rs. 25,000</td>
+        <td>In Stock</td>
+    </tr>
+    <tr>
+        <td>Wireless Keyboard</td>
+        <td>Accessories</td>
+        <td>Rs. 7,000</td>
+        <td>In Stock</td>
+    </tr>
+</table>
+<h2>Our Services</h2>
+<div class="services">
+    <div class="service">
+        <h3>Software Installation</h3>
+        <p>We install programs and operating systems.</p>
+    </div>
+    <div class="service">
+        <h3>Computer Repair</h3>
+        <p>We fix slow, broken or damaged computers.</p>
+    </div>
+    <div class="service">
+        <h3>Network Setup</h3>
+        <p>We set up Wi-Fi and office networks.</p>
+    </div>
+    <div class="service">
+        <h3>Data Backup</h3>
+        <p>We keep a safe copy of your files.</p>
+    </div>
+</div>
+<h2>Available Services</h2>
+<div class="box">
+    <ul>
+        <li>Software Installation</li>
+        <li>Computer Repair</li>
+        <li>Network Setup</li>
+        <li>Data Backup</li>
+    </ul>
+</div>
+<h2>How We Help Our Customers</h2>
+<div class="box">
+    <ol>
+        <li>Customer contacts us</li>
+        <li>We inspect the problem</li>
+        <li>We provide a solution</li>
+        <li>Customer receives the product/service</li>
+    </ol>
+</div>
+<h2>Technology Terms</h2>
+<div class="box">
+    <dl>
+        <dt><strong>Laptop</strong></dt>
+        <dd>A portable computer used for work and study.</dd>
+
+        <dt><strong>Cloud Backup</strong></dt>
+        <dd>A method of storing data online.</dd>
+
+        <dt><strong>Smart Device</strong></dt>
+        <dd>An electronic device with modern digital features.</dd>
+    </dl>
+</div>
+<h2>Other Facts</h2>
+<div class="box">
+    <p>Water is written as H<sub>2</sub>O</p>
+    <p>Einstein's formula is E = mc<sup>2</sup></p>
+    <p>Customer name: <bdi>احمد خان</bdi></p>
+    <p>Reversed text: <bdo dir="rtl">TechNest Solutions</bdo></p>
+</div>
+<h2>Company Information</h2>
+<div class="box">
+    <address>
+        Written by: Zainoor<br>
+        TechNest Solutions<br>
+        Main Road, Faisalabad,Pakistan<br>
+        Email: technest@gmail.com
+    </address>
+</div>
+<h2>Our Team</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Experience</th>
+    </tr>
+    <tr>
+        <td>Zainoor</td>
+        <td>Store Manager</td>
+        <td>8 years</td>
+    </tr>
+    <tr>
+        <td>Ayesha Noor</td>
+        <td>Sales Executive</td>
+        <td>4 years</td>
+    </tr>
+    <tr>
+        <td>Abdulwahab </td>
+        <td>Repair Technician</td>
+        <td>6 years</td>
+    </tr>
+    <tr>
+        <td>Talha</td>
+        <td>Network Engineer</td>
+        <td>5 years</td>
+    </tr>
+</table>
+<h2>Contact Us</h2>
+<div class="box" id="contact">
+    <p>Email: technest@example.com</p>
+    <p>Phone: +92 300 1234567</p>
+    <p>Address: Main Road, Faisalabad, Pakistan</p>
+</div>
+</div>
+</body>
+</html>

@@ -23,7 +23,7 @@ h3 { font-size: 18px; color: black; margin: 5px; }
 .header {
         background-color:slategrey;
         color: black;
-        text-align: left;
+        text-align: center;
         padding: 20px;
         border-bottom: 5px;
     }
@@ -290,6 +290,46 @@ td {
     <p>Phone: +92 300 1234567</p>
     <p>Address: Main Road, Faisalabad, Pakistan</p>
 </div>
+</div>
+<div class="section">
+    <h2>Customer Inquiry Form</h2>
+<form action="/action_page.php" method="get" target="_blank">
+<!-- Text Input -->
+ <label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John"><br><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" value="Doe"><br><br>
+<!-- Radio Buttons (Question 1) -->
+    <p>Which product are you interested in?</p>
+<input type="radio" id="laptop" name="product" value="Laptop">
+<label for="laptop">Laptop</label><br>
+<input type="radio" id="smartphone" name="product" value="Smartphone">
+<label for="smartphone">Smartphone</label><br>
+<input type="radio" id="headphones" name="product" value="Headphones">
+<label for="headphones">Headphones</label><br>
+<input type="radio" id="smartwatch" name="product" value="Smart Watch">
+<label for="smartwatch">Smart Watch</label><br>
+<!-- Radio Buttons (Question 2) -->
+     <p>Which service do you need?</p>
+<input type="radio" id="repair" name="service" value="Computer Repair">
+<label for="repair">Computer Repair</label><br>
+<input type="radio" id="software" name="service" value="Software Installation">
+<label for="software">Software Installation</label><br>
+<input type="radio" id="network" name="service" value="Network Setup">
+<label for="network">Network Setup</label><br><br>
+<!-- Dropdown List -->
+<label for="category">Choose your preferred category:</label>
+<select id="category" name="category">
+    <option value="computers">Computers</option>
+    <option value="mobile">Mobile Phones</option>
+    <option value="audio">Audio Devices</option>
+    <option value="accessories">Accessories</option>
+</select><br><br>
+ <!-- Submit Button -->
+<input type="submit" value="Submit">
+
+</form>
+ </div>
 </div>
 </body>
 </html>

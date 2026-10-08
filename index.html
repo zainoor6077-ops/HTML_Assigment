@@ -98,9 +98,11 @@ td {
 .section{
         background-color: white;
         border: 1px solid black;
-        padding: 15px;
+        padding: 20px;
         margin-bottom: 15px;
         border-radius: 8px;
+        width: 100%;
+        max-width: 360px;
 }
 </style>
 </head>
@@ -296,9 +298,9 @@ td {
 <form action="/action_page.php" method="get" target="_blank">
 <!-- Text Input -->
  <label for="fname">First name:</label><br>
-<input type="text" id="fname" name="fname" value="John"><br><br>
+<input type="text" id="fname" name="fname" value="e.g:Ali"><br><br>
 <label for="lname">Last name:</label><br>
-<input type="text" id="lname" name="lname" value="Doe"><br><br>
+<input type="text" id="lname" name="lname" value="e.g:Raza"><br><br>
 <!-- Radio Buttons (Question 1) -->
     <p>Which product are you interested in?</p>
 <input type="radio" id="laptop" name="product" value="Laptop">
@@ -316,14 +318,19 @@ td {
 <input type="radio" id="software" name="service" value="Software Installation">
 <label for="software">Software Installation</label><br>
 <input type="radio" id="network" name="service" value="Network Setup">
-<label for="network">Network Setup</label><br><br>
+<label for="network">Network Setup</label><br>
+<input type="radio" id="Backup" name="service" value="Data Backup">
+<label for="repair">Data Backup</label><br>
+<input type="radio" id="BUY" name="service" value="Buy any item">
+<label for="repair">Buy Any Item</label><br><br>
 <!-- Dropdown List -->
 <label for="category">Choose your preferred category:</label>
 <select id="category" name="category">
-    <option value="computers">Computers</option>
+    <option value="computers">Laptops</option>
     <option value="mobile">Mobile Phones</option>
     <option value="audio">Audio Devices</option>
     <option value="accessories">Accessories</option>
+    <option value="accessories">Smart Phones</option>
 </select><br><br>
  <!-- Submit Button -->
 <input type="submit" value="Submit">
